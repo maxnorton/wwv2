@@ -7,7 +7,53 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
-body {}
+body {
+	background-color: #fafafa;
+}
+
+#inner-content {
+	background-color: #888;
+}
+
+.header .contain-to-grid {
+		background: transparent;
+}
+
+.tab-bar,
+.top-bar {
+	background: transparent;
+	height: auto;
+	margin: 2em auto !important;
+
+	.phone {
+		padding: .5em 0 0;
+	}
+
+	.name {
+		height: 4em;
+		padding: .5em 0 0 4em;
+		background: url('../images/wwv-logo-transparent-fringed.png') no-repeat transparent;
+		background-size: contain;
+	
+		h1 a {
+				color: #03707a;
+				font-family: "Trajan Pro", san-serif;
+				font-size: 2em;
+		}
+	}
+
+}
+
+#inner-content {
+	background: #888 url('../images/tryptich.jpg') no-repeat center top;
+	background-size: contain;
+	padding-top: 387px !important;
+}
+
+.large {
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
 
 /*********************
 LINK STYLES
