@@ -6918,7 +6918,7 @@ body {
 
 .homepage-hero {
   background: #fff url("../images/river.jpg") no-repeat center top;
-  background-size: contain;
+  background-size: auto 387px;
   font-family: "corbel", sans-serif;
   padding-top: 437px !important;
   padding-bottom: 25vh; }
