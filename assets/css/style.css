@@ -6914,7 +6914,21 @@ body {
       height: 3em; }
 
 #inner-content {
-  padding-bottom: 0 !important; }
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  background-color: #fff; }
+
+#inner-content:before {
+  display: none; }
+
+body:not(.home) .article-header {
+  background-color: #333;
+  border: 1em solid white;
+  padding: 1em;
+  text-align: center; }
+  body:not(.home) .article-header h1 {
+    color: white;
+    font-family: "corbel"; }
 
 .homepage-hero {
   background: #fff url("../images/river.jpg") no-repeat center top;
