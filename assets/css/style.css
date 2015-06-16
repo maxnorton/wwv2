@@ -6920,7 +6920,8 @@ body {
   background: #fff url("../images/river.jpg") no-repeat center top;
   background-size: contain;
   font-family: "corbel", sans-serif;
-  padding-top: 387px !important; }
+  padding-top: 437px !important;
+  padding-bottom: 25vh; }
   .homepage-hero header,
   .homepage-hero section {
     padding: 2em 0; }
@@ -6933,6 +6934,16 @@ body {
 .pages-grid .columns {
   overflow: hidden; }
 
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .pages-grid .entry-content {
+    width: 75%; }
+  .pages-grid .text-right .entry-content {
+    margin-left: 25%; } }
+@media only screen and (min-width: 64.0625em) {
+  .pages-grid .entry-content {
+    width: 50%; }
+  .pages-grid .text-right .entry-content {
+    margin-left: 50%; } }
 .transpanel,
 .transpanel.callout {
   border-color: transparent;
@@ -6943,6 +6954,8 @@ body {
   transition: background 1s; }
   .transpanel img {
     box-shadow: 0 0 6px #fff; }
+  .transpanel .small img {
+    width: 33%; }
 
 .transpanel:hover {
   background: #cccccc;

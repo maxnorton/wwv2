@@ -60,7 +60,8 @@ body {
 	background: #fff url('../images/river.jpg') no-repeat center top;
 	background-size: contain;
 	font-family: "corbel", sans-serif;
-	padding-top: 387px !important;
+	padding-top: 437px !important;
+	padding-bottom: 25vh;
 
 	header,
 	section {
@@ -81,6 +82,39 @@ body {
 	overflow: hidden;
 }
 
+@media #{$medium-only} {
+	
+	.pages-grid {
+	
+		.entry-content {
+			width: 75%;
+		}
+
+		.text-right .entry-content {
+			margin-left: 25%;
+		}
+
+	}
+
+}
+
+@media #{$large-up} {
+	
+	.pages-grid {
+	
+		.entry-content {
+			width: 50%;
+		}
+
+		.text-right .entry-content {
+			margin-left: 50%;
+		}
+
+	}
+
+}
+
+
 .transpanel,
 .transpanel.callout {
 	border-color: transparent;
@@ -93,6 +127,10 @@ body {
 
 	img {
 		box-shadow: 0 0 6px #fff;
+	}
+
+	.small img {
+		width: 33%;
 	}
 }
 
