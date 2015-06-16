@@ -6930,6 +6930,9 @@ body {
 .post-37 {
   display: none; }
 
+.pages-grid .columns {
+  overflow: hidden; }
+
 .transpanel,
 .transpanel.callout {
   border-color: transparent;

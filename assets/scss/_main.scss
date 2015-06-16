@@ -77,6 +77,10 @@ body {
 	display: none;
 }
 
+.pages-grid .columns {
+	overflow: hidden;
+}
+
 .transpanel,
 .transpanel.callout {
 	border-color: transparent;

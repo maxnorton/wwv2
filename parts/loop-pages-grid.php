@@ -30,17 +30,17 @@
 
 				<div class="<?php pages_grid_panel_classes($grid_id); ?>" data-equalizer-watch>
 		    
-					<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
+					<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" <?php if ($grid_id % 2 != 0 ) { echo 'style="text-align: right;'; } ?>>
 					
-						<section class="featured-image" itemprop="articleBody">
+						<section class="featured-image" itemprop="articleBody" data-0="opacity: 0;" data-600-top="opacity: 1;">
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 						</section> <!-- end article section -->
 					
-						<header class="article-header">
+						<header class="article-header" data-0="opacity: 0;" data-500-top="opacity: 1; transform: translateX(0) translateY(0);" style="text-align: center;">
 							<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>	
 						</header> <!-- end article header -->	
 										
-						<section class="entry-content" itemprop="articleBody">
+						<section class="entry-content" itemprop="articleBody" data-0="opacity: 0; transform: translateX(<?php if ($grid_id % 2 != 0 ) { echo '-'; } ?>100px) translateY(30px);" data-300-top="opacity: 1; transform: translateX(0) translateY(0);">
 							<?php the_excerpt('<button class="tiny">Read more...</button>'); ?> 
 						</section> <!-- end article section -->
 										    							
