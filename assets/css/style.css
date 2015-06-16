@@ -6877,42 +6877,89 @@ Stylesheet: Main Stylesheet
 GENERAL STYLES
 *********************/
 body {
-  background-color: #fafafa; }
+  background-color: #f3f3f3; }
 
-#inner-content {
-  background-color: #888; }
+.header {
+  padding: 1em 0;
+  background: #f3f3f3; }
 
-.header .contain-to-grid {
-  background: transparent; }
+.header > .sticky {
+  background: #f3f3f3;
+  margin: 0 auto !important;
+  padding: 1em 0 0; }
 
 .tab-bar,
 .top-bar {
   background: transparent;
-  height: auto;
-  margin: 2em auto !important; }
+  height: auto; }
   .tab-bar .phone,
-  .top-bar .phone {
-    padding: .5em 0 0; }
+  .tab-bar .phone .button,
+  .top-bar .phone,
+  .top-bar .phone .button {
+    x-position: absolute;
+    x-top: 0;
+    x-right: 0;
+    x-z-index: 9; }
   .tab-bar .name,
   .top-bar .name {
-    height: 4em;
-    padding: .5em 0 0 4em;
-    background: url("../images/wwv-logo-transparent-fringed.png") no-repeat transparent;
-    background-size: contain; }
+    height: auto; }
     .tab-bar .name h1 a,
     .top-bar .name h1 a {
       color: #03707a;
       font-family: "Trajan Pro", san-serif;
-      font-size: 2em; }
+      font-size: 2em;
+      text-transform: uppercase; }
+    .tab-bar .name img,
+    .top-bar .name img {
+      height: 3em; }
 
 #inner-content {
-  background: #888 url("../images/tryptich.jpg") no-repeat center top;
+  padding-bottom: 0 !important; }
+
+.homepage-hero {
+  background: #fff url("../images/river.jpg") no-repeat center top;
   background-size: contain;
+  font-family: "corbel", sans-serif;
   padding-top: 387px !important; }
+  .homepage-hero header,
+  .homepage-hero section {
+    padding: 2em 0; }
+  .homepage-hero h1, .homepage-hero .button {
+    font-family: "corbel", sans-serif; }
+
+.post-37 {
+  display: none; }
+
+.transpanel,
+.transpanel.callout {
+  border-color: transparent;
+  margin-bottom: 0; }
+
+.transpanel {
+  background: white;
+  transition: background 1s; }
+  .transpanel img {
+    box-shadow: 0 0 6px #fff; }
+
+.transpanel:hover {
+  background: #cccccc;
+  border-color: white; }
+
+.phone h5 {
+  margin-top: 0;
+  text-align: center; }
+  .phone h5 a {
+    color: #03707a; }
 
 .large {
-  font-size: 1.25em;
-  line-height: 1.25em; }
+  font-size: 1.5em;
+  line-height: 1.5em; }
+
+.footer {
+  font-family: "corbel", sans-serif;
+  padding: 3em 0;
+  text-align: center;
+  text-transform: uppercase; }
 
 /*********************
 LINK STYLES

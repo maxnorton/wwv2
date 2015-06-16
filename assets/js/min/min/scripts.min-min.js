@@ -1,0 +1,1 @@
+jQuery(document).foundation({equalizer:{equalize_on_stack:!0}});

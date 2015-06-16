@@ -1,3 +1,5 @@
+<?php if ( is_front_page() ) { get_template_part( 'parts/hero', 'front' ); } ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">

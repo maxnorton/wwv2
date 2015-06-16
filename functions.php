@@ -39,4 +39,6 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php'); 
 
+// Add page grid layout function
+require_once(get_template_directory().'/assets/functions/pages-grid.php');
 ?>

@@ -3,6 +3,7 @@
 register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu', 'jointstheme' ),   // Main nav in header
+		'front-grid' => __( 'Pages grid', 'jointstheme' ), // Grid of featured pages on front page
 		'footer-links' => __( 'Footer Links', 'jointstheme' ) // Secondary nav in footer
 	)
 );
