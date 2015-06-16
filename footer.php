@@ -14,5 +14,11 @@
 			</div> <!-- end .inner-wrap -->
 		</div> <!-- end .off-canvas-wrap -->
 		<?php wp_footer(); ?>
+	<div id="skrollr-body"></div>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+	    var s = skrollr.init();
+	});
+	</script>
 	</body>
 </html> <!-- end page -->

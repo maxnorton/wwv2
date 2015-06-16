@@ -15,6 +15,9 @@ function joints_scripts_and_styles() {
     
     // Adding Foundation scripts file in the footer
    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/js/min/foundation.min.js', array( 'jquery' ), '', true );
+
+   // Add Skrollr from CDN
+   wp_enqueue_script( 'skrollr', '//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js');
     
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/min/scripts.min.js', array( 'jquery' ), '', true );
