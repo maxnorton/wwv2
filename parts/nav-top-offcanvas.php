@@ -3,7 +3,7 @@
 		<ul class="title-area row collapse">
 			<!-- Title Area -->
 			<li class="name text-center medium-6 small-12 columns">
-				<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/wwv2/assets/images/wwv-logo-transparent-fringed.png" /></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/wwv2/assets/images/wwv-logo-shimmery.png" /></a>
 				<h1 class="text-center"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
 			</li>
 			<li class="phone text-center medium-3 small-12 columns">
