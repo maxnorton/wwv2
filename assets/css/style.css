@@ -6911,7 +6911,7 @@ body {
       text-transform: uppercase; }
     .tab-bar .name img,
     .top-bar .name img {
-      height: 3em; }
+      padding-bottom: 1em; }
 
 #inner-content {
   padding-bottom: 0 !important;
