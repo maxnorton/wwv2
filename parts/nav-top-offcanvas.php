@@ -1,12 +1,15 @@
 <div class="sticky contain-to-grid">
 	<nav class="top-bar" data-topbar>
-		<ul class="title-area row collapse">
-			<!-- Title Area -->
-			<li class="name text-center medium-6 small-12 columns">
-				<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/wwv2/assets/images/wwv-logo-shimmery.png" /></a>
-				<h1 class="text-center"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
+		<ul class="title-area">
+			<div class="slide-title-wrapper left">
+				<a class="left" href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/wwv2/assets/images/wwv-logo-shimmery.png" /></a><div class="slide-title left" data-top="transform: translateX(0%); opacity: 1;" data-600="transform: translateX(-100%); opacity: 0;"><h1 class="text-center"><a href="<?php echo home_url(); ?>" rel="nofollow"> Whitewater Voyages</a></div>
+			</div>
+		</ul>
+		<section class="top-bar-section right text-center">
+			<?php joints_top_nav(); ?>
+		</section>
+		<ul class="right">
+			<li class="phone text-center">
+				<a class="button" href="tel:+18004007238"><i class="fi-telephone"></i>&nbsp;&nbsp;&nbsp;800-400-7238</a>
 			</li>
-			<li class="phone text-center medium-3 small-12 columns">
-				<a class="button" href="tel:+18004007238" class=""><i class="fi-telephone"></i>&nbsp;&nbsp;&nbsp;800-400-7238</a>
-			</li>
-		</ul>		
+		</ul>
