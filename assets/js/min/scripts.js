@@ -9,10 +9,13 @@ jQuery(document).ready(function() {
 
 	jQuery('.scroll-to-anchor').each( function() {
 		jQuery(this).click( function() {
+			console.log('click');
 			var target = jQuery(this).attr('href');
+			console.log('target = ' + target);
 			jQuery('html, body').animate({
 		        scrollTop: jQuery(target).offset().top
 		    }, 750);
+		    console.log('animated');
 		});
 	});
 
