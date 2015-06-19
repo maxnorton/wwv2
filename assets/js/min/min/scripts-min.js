@@ -1,1 +1,1 @@
-jQuery(document).foundation({equalizer:{equalize_on_stack:!0}});
+jQuery(document).foundation({equalizer:{equalize_on_stack:!0}}),jQuery(document).ready(function(){jQuery(".scroll-to-anchor").each(function(){jQuery(this).click(function(){var e=jQuery(this).attr("href");jQuery("html, body").animate({scrollTop:jQuery(e).offset().top},750)})})});

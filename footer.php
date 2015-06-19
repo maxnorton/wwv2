@@ -22,6 +22,9 @@
         		return data.direction == 'down';
     		}
     	});
+
+	    jQuery('#menu-explore-californias-whitewater-rivers').attr('data-200', 'transform: translateX(0);');
+
 	});
 	</script>
 	</body>

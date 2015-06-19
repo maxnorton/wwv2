@@ -14,7 +14,7 @@ function joints_top_nav() {
         'container' => false,                           // Remove nav container
         'container_class' => '',                        // Class of container
         'menu' => 'The Top Menu', 'jointstheme',                                   // Menu name
-        'menu_class' => 'top-bar-menu right',            // Adding custom nav class
+        'menu_class' => 'top-bar-menu left',            // Adding custom nav class
         'theme_location' => 'main-nav',                // Where it's located in the theme
         'before' => '',                                 // Before each link <a>
         'after' => '',                                  // After each link </a>

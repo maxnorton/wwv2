@@ -18,7 +18,7 @@
 	$posts = get_pages( $args );
 ?>
 
-<div class="row collapse pages-grid"> <!--Begin Row:--> 
+<div id="grid-top" class="row collapse pages-grid"> <!--Begin Row:--> 
 
      <?php 
 

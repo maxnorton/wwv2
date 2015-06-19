@@ -253,6 +253,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/logo-splashy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11617,
+		"inputAbbreviatedPath": "\/assets\/images\/logo-splashy.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/logo-splashy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/river.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -282,6 +293,28 @@
 		"initialSize": 19678,
 		"inputAbbreviatedPath": "\/assets\/images\/win8-tile-icon.png",
 		"outputAbbreviatedPath": "\/assets\/images\/win8-tile-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/wwv-logo-full.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11554,
+		"inputAbbreviatedPath": "\/assets\/images\/wwv-logo-full.png",
+		"outputAbbreviatedPath": "\/assets\/images\/wwv-logo-full.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/wwv-logo-shimmery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5493,
+		"inputAbbreviatedPath": "\/assets\/images\/wwv-logo-shimmery.png",
+		"outputAbbreviatedPath": "\/assets\/images\/wwv-logo-shimmery.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

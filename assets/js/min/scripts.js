@@ -4,3 +4,16 @@ jQuery(document).foundation({
 	    equalize_on_stack: true
  	}
  });
+
+jQuery(document).ready(function() {
+
+	jQuery('.scroll-to-anchor').each( function() {
+		jQuery(this).click( function() {
+			var target = jQuery(this).attr('href');
+			jQuery('html, body').animate({
+		        scrollTop: jQuery(target).offset().top
+		    }, 750);
+		});
+	});
+
+});
