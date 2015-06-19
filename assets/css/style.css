@@ -7021,9 +7021,19 @@ body:not(.home) .article-header {
 
 .footer {
   font-family: "corbel", sans-serif;
-  padding: 3em 0;
-  text-align: center;
-  text-transform: uppercase; }
+  margin-top: 0 !important; }
+  .footer #inner-footer {
+    background-color: #06697c;
+    color: white; }
+    .footer #inner-footer h3 {
+      color: white;
+      padding-top: 1em; }
+  .footer .lastrow {
+    background-color: #333;
+    color: white;
+    padding: 2em 0; }
+  .footer .copyright {
+    text-transform: uppercase; }
 
 /*********************
 LINK STYLES

@@ -228,9 +228,29 @@ body:not(.home) {
 
 .footer {
 	font-family: "corbel", sans-serif;
-	padding: 3em 0;
-	text-align: center;
-	text-transform: uppercase;
+	margin-top: 0 !important;
+
+	#inner-footer {
+		background-color: #06697c;
+		color: white;
+
+		h3 {
+			color: white;
+			padding-top: 1em;
+		}
+
+	}
+
+	.lastrow {
+		background-color: #333;
+		color: white;
+		padding: 2em 0;
+	}
+
+	.copyright {
+		text-transform: uppercase;
+	}
+
 }
 
 /*********************

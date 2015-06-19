@@ -264,6 +264,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/ra-logo-member.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16695,
+		"inputAbbreviatedPath": "\/assets\/images\/ra-logo-member.png",
+		"outputAbbreviatedPath": "\/assets\/images\/ra-logo-member.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/river.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
