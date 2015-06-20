@@ -66,6 +66,7 @@ body {
 
 .slide-title-wrapper {
 	overflow-x: hidden;
+	width: 350px;
 
 	& > a {
 		background-color: white;
@@ -74,6 +75,17 @@ body {
 		z-index: 9;
 	}
 
+}
+
+.social-bar {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 275px;
+
+	img {
+		width: 100%;
+	}
 }
 
 .top-bar h1 {

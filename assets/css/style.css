@@ -6919,12 +6919,21 @@ body {
       text-transform: uppercase; }
 
 .slide-title-wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 350px; }
   .slide-title-wrapper > a {
     background-color: white;
     padding: 0.25em 0.5em;
     position: relative;
     z-index: 9; }
+
+.social-bar {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 275px; }
+  .social-bar img {
+    width: 100%; }
 
 .top-bar h1 {
   font-family: "Trajan Pro", serif;
