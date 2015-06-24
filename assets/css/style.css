@@ -5911,7 +5911,7 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: white;
   color: #FFFFFF;
   height: 2.8125rem;
   line-height: 2.8125rem;
@@ -5929,7 +5929,7 @@ blockquote p {
   position: absolute;
   top: 0;
   width: 2.8125rem;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px gray;
   left: 0; }
 
 .right-small {
@@ -5937,7 +5937,7 @@ blockquote p {
   position: absolute;
   top: 0;
   width: 2.8125rem;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px gray;
   right: 0; }
 
 .tab-bar-section {
@@ -5961,7 +5961,7 @@ blockquote p {
     right: 2.8125rem; }
 
 .tab-bar .menu-icon {
-  color: #FFFFFF;
+  color: #333;
   display: block;
   height: 2.8125rem;
   padding: 0;
@@ -5977,14 +5977,14 @@ blockquote p {
     top: 50%;
     margin-top: -0.5rem;
     left: 0.90625rem;
-    box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+    box-shadow: 0 0 0 1px #333, 0 7px 0 1px #333, 0 14px 0 1px #333;
     width: 1rem; }
   .tab-bar .menu-icon span:hover:after {
-    box-shadow: 0 0 0 1px #b3b3b3, 0 7px 0 1px #b3b3b3, 0 14px 0 1px #b3b3b3; }
+    box-shadow: 0 0 0 1px #242424, 0 7px 0 1px #242424, 0 14px 0 1px #242424; }
 
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: white;
   bottom: 0;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -6008,7 +6008,7 @@ blockquote p {
 
 .right-off-canvas-menu {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: white;
   bottom: 0;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -6035,10 +6035,10 @@ ul.off-canvas-list {
   margin: 0;
   padding: 0; }
   ul.off-canvas-list li label {
-    background: #444444;
+    background: #fff;
     border-bottom: none;
-    border-top: 1px solid #5e5e5e;
-    color: #999999;
+    border-top: 1px solid white;
+    color: #999;
     display: block;
     font-size: 0.75rem;
     font-weight: bold;
@@ -6046,15 +6046,15 @@ ul.off-canvas-list {
     padding: 0.3rem 0.9375rem;
     text-transform: uppercase; }
   ul.off-canvas-list li a {
-    border-bottom: 1px solid #262626;
-    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #bfbfbf;
+    color: rgba(51, 51, 51, 0.7);
     display: block;
     padding: 0.6666666667rem;
     transition: background 300ms ease; }
     ul.off-canvas-list li a:hover {
-      background: #242424; }
+      background: #b3b3b3; }
     ul.off-canvas-list li a:active {
-      background: #242424; }
+      background: #b3b3b3; }
 
 .move-right > .inner-wrap {
   -webkit-transform: translate3d(15.625rem, 0, 0);
@@ -6065,7 +6065,7 @@ ul.off-canvas-list {
   transform: translate3d(15.625rem, 0, 0); }
 .move-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0;
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
@@ -6090,7 +6090,7 @@ ul.off-canvas-list {
   transform: translate3d(-15.625rem, 0, 0); }
 .move-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0;
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
@@ -6115,7 +6115,7 @@ ul.off-canvas-list {
   z-index: 1003; }
 .offcanvas-overlap .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0;
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
@@ -6140,7 +6140,7 @@ ul.off-canvas-list {
   z-index: 1003; }
 .offcanvas-overlap-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0;
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
@@ -6165,7 +6165,7 @@ ul.off-canvas-list {
   z-index: 1003; }
 .offcanvas-overlap-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0;
   cursor: pointer;
   transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
@@ -6193,7 +6193,7 @@ ul.off-canvas-list {
 .left-submenu {
   -webkit-backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
-  background: #333333;
+  background: white;
   bottom: 0;
   box-sizing: content-box;
   margin: 0;
@@ -6220,8 +6220,8 @@ ul.off-canvas-list {
   .left-submenu .back > a {
     background: #444;
     border-bottom: none;
-    border-top: 1px solid #5e5e5e;
-    color: #999999;
+    border-top: 1px solid white;
+    color: #999;
     font-weight: bold;
     padding: 0.3rem 0.9375rem;
     text-transform: uppercase;
@@ -6229,7 +6229,7 @@ ul.off-canvas-list {
     .left-submenu .back > a:hover {
       background: #303030;
       border-bottom: none;
-      border-top: 1px solid #5e5e5e; }
+      border-top: 1px solid white; }
     .left-submenu .back > a:before {
       content: "\AB";
       margin-right: .5rem;
@@ -6245,7 +6245,7 @@ ul.off-canvas-list {
 .right-submenu {
   -webkit-backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
-  background: #333333;
+  background: white;
   bottom: 0;
   box-sizing: content-box;
   margin: 0;
@@ -6272,8 +6272,8 @@ ul.off-canvas-list {
   .right-submenu .back > a {
     background: #444;
     border-bottom: none;
-    border-top: 1px solid #5e5e5e;
-    color: #999999;
+    border-top: 1px solid white;
+    color: #999;
     font-weight: bold;
     padding: 0.3rem 0.9375rem;
     text-transform: uppercase;
@@ -6281,7 +6281,7 @@ ul.off-canvas-list {
     .right-submenu .back > a:hover {
       background: #303030;
       border-bottom: none;
-      border-top: 1px solid #5e5e5e; }
+      border-top: 1px solid white; }
     .right-submenu .back > a:after {
       content: "\BB";
       margin-left: .5rem;
@@ -6911,29 +6911,55 @@ body {
   .tab-bar .name,
   .top-bar .name {
     height: auto; }
-    .tab-bar .name h1 a,
-    .top-bar .name h1 a {
-      color: #1269a6;
-      font-family: "Trajan Pro", san-serif;
-      font-size: 2em;
-      text-transform: uppercase; }
+  .tab-bar h1 a,
+  .top-bar h1 a {
+    color: #1269a6;
+    font-family: "Trajan Pro", san-serif;
+    font-size: 1em;
+    font-weight: normal;
+    position: relative;
+    text-transform: uppercase;
+    top: 0.35em; }
 
+.tab-bar {
+  height: 54px;
+  position: relative;
+  z-index: 9; }
+  .tab-bar .menu-icon span::after {
+    box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000; }
+
+@media only screen and (max-width: 40em) {
+  .tab-bar-section.middle {
+    left: 0;
+    right: 0; } }
 .slide-title-wrapper {
   overflow-x: hidden;
-  width: 350px; }
+  width: 350px;
+  position: relative; }
   .slide-title-wrapper > a {
     background-color: white;
     padding: 0.25em 0.5em;
     position: relative;
     z-index: 9; }
 
-.social-bar {
+.phone.show-for-small-only {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  width: 100%; }
+
+.social-bar:not(.show-for-small-only) {
   position: absolute;
   right: 0;
   top: 5px;
   width: 275px; }
-  .social-bar img {
+  .social-bar:not(.show-for-small-only) img {
     width: 100%; }
+
+.social-bar.show-for-small-only {
+  padding-left: 1rem;
+  width: 14rem; }
 
 .top-bar h1 {
   font-family: "Trajan Pro", serif;
