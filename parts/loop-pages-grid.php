@@ -18,7 +18,7 @@
 	$posts = get_pages( $args );
 ?>
 
-<div class="row collapse pages-grid" data-equalizer data-equalizer-mq="medium-up"> <!--Begin Row:--> 
+<div id="grid-top" class="row collapse pages-grid"> <!--Begin Row:--> 
 
      <?php 
 
@@ -28,19 +28,19 @@
 		    <!--Item: -->
 			<div class="<?php pages_grid_classes($grid_id); ?>">
 
-				<div class="<?php pages_grid_panel_classes($grid_id); ?>" data-equalizer-watch>
+				<div class="<?php pages_grid_panel_classes($grid_id); ?>">
 		    
 					<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 					
-						<section class="featured-image" itemprop="articleBody">
+						<section class="featured-image <?php pages_grid_img_classes($grid_id);?>" itemprop="articleBody" data-bottom-top="opacity: 0;" data-center="opacity: 1;">
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 						</section> <!-- end article section -->
 					
-						<header class="article-header">
+						<header class="article-header" data-bottom="opacity: 0; transform: translateX(<?php if ($grid_id % 2 == 0 ) { echo '-'; } ?>100px) translateY(30px);" data-center="opacity: 1; transform: translateX(0) translateY(0);">
 							<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>	
 						</header> <!-- end article header -->	
 										
-						<section class="entry-content" itemprop="articleBody">
+						<section class="entry-content" itemprop="articleBody" data-bottom="opacity: 0; transform: translateX(<?php if ($grid_id % 2 == 0 ) { echo '-'; } ?>100px) translateY(30px);" data-center="opacity: 1; transform: translateX(0) translateY(0);">
 							<?php the_excerpt('<button class="tiny">Read more...</button>'); ?> 
 						</section> <!-- end article section -->
 										    							

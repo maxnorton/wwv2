@@ -12,55 +12,173 @@ body {
 }
 
 .header {
-	padding: 1em 0;
 	background: #f3f3f3;
 }
 
 .header > .sticky {
 	background: #f3f3f3;
 	margin: 0 auto !important;
-	padding: 1em 0 0;
+}
+
+.header > .sticky > .top-bar {
+	border-bottom: 2px solid #fafafa;
+}
+
+.header > .fixed > .top-bar {
+	border-bottom: 2px solid #fafafa;
 }
 
 .tab-bar,
 .top-bar {
-	background: transparent;
 	height: auto;
 
-	.phone,
+	.white-bar {
+		background: white;
+	}
+
+	.trans-bar {
+		padding: 2em 0;
+	}
+
 	.phone .button {
-		x-position: absolute;
-		x-top: 0;
-		x-right: 0;
-		x-z-index: 9;
+		top: 0;
+		height: 2.8125rem;
+		padding-top: (2.8125/4)*1rem;
+		border-top: 1px solid white;
+		border-right: 1px solid white;
 	}
 
 	.name {
 		height: auto;
+	}
 
-		h1 a {
-				color: #03707a;
-				font-family: "Trajan Pro", san-serif;
-				font-size: 2em;
-				text-transform: uppercase;
-		}
-
-		img {
-			height: 3em;
-		}
+	h1 a {
+			color: #1269a6;
+			font-family: "Trajan Pro", san-serif;
+			font-size: 1em;
+			font-weight: normal;
+			position: relative;
+			text-transform: uppercase;
+			top: 0.35em;
 	}
 
 }
 
+.tab-bar {
+	height: 54px;
+	position: relative;
+	z-index: 9;
+
+	.menu-icon span::after{
+		box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000;
+	}
+
+}
+
+@media #{$small-only} {
+	.tab-bar-section.middle {
+		left: 0;
+		right: 0;
+	}
+}
+
+.slide-title-wrapper {
+	overflow-x: hidden;
+	width: 350px;
+	position: relative;
+
+	& > a {
+		background-color: white;
+		padding: 0.25em 0.5em;
+		position: relative;
+		z-index: 9;
+	}
+
+}
+
+.phone.show-for-small-only {
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 3px;
+	width: 100%;
+}
+
+.social-bar:not(.show-for-small-only) {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 275px;
+
+	img {
+		width: 100%;
+	}
+
+}
+
+.social-bar.show-for-small-only {
+	padding-left: 1rem;
+	width: 14rem;
+}
+
+.top-bar h1 {
+	font-family: "Trajan Pro", serif;
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	text-transform: uppercase;
+}
+
+.actual-title {
+	background-color: white;
+	list-style-type: none;
+
+	h1 {
+		font-family: "Trajan Pro", serif;
+		font-size: 2em;
+		text-transform: uppercase;
+	}
+
+}
+
+.top-bar-section ul li {
+	background: transparent;
+
+	a {
+		color: black;
+	}	
+}
+
 #inner-content {
 	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	background-color: #fff;
+}
+
+#inner-content:before {
+	display: none;
+}
+
+body:not(.home) {
+	.article-header {
+		background-color: #333;
+		border: 1em solid white;
+		padding: 1em;
+		text-align: center;
+
+			h1 {
+				color: white;
+				font-family: "corbel";
+			}
+	}
 }
 
 .homepage-hero {
-	background: #fff url('../images/river.jpg') no-repeat center top;
-	background-size: contain;
+	background: #06697c url('../images/river.jpg') no-repeat center top;
+	background-size: auto 387px;
+	color: white;
 	font-family: "corbel", sans-serif;
-	padding-top: 387px !important;
+	padding-top: 437px !important;
+	padding-bottom: 25vh;
 
 	header,
 	section {
@@ -69,13 +187,51 @@ body {
 
 	h1, .button {
 		font-family: "corbel", sans-serif;
+		color: white;
 	}
 
 }
 
-.post-37 {
+.post-14 {
 	display: none;
 }
+
+.pages-grid .columns {
+	overflow: hidden;
+}
+
+@media #{$medium-only} {
+	
+	.pages-grid {
+	
+		.entry-content {
+			width: 75%;
+		}
+
+		.text-right .entry-content {
+			margin-left: 25%;
+		}
+
+	}
+
+}
+
+@media #{$large-up} {
+	
+	.pages-grid {
+	
+		.entry-content {
+			width: 50%;
+		}
+
+		.text-right .entry-content {
+			margin-left: 50%;
+		}
+
+	}
+
+}
+
 
 .transpanel,
 .transpanel.callout {
@@ -89,6 +245,10 @@ body {
 
 	img {
 		box-shadow: 0 0 6px #fff;
+	}
+
+	.small img {
+		width: 33%;
 	}
 }
 
@@ -113,9 +273,29 @@ body {
 
 .footer {
 	font-family: "corbel", sans-serif;
-	padding: 3em 0;
-	text-align: center;
-	text-transform: uppercase;
+	margin-top: 0 !important;
+
+	#inner-footer {
+		background-color: #06697c;
+		color: white;
+
+		h3 {
+			color: white;
+			padding-top: 1em;
+		}
+
+	}
+
+	.lastrow {
+		background-color: #333;
+		color: white;
+		padding: 2em 0;
+	}
+
+	.copyright {
+		text-transform: uppercase;
+	}
+
 }
 
 /*********************

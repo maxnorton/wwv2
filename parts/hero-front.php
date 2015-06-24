@@ -7,7 +7,7 @@
 		<article id="post-<?php echo $frontPost->ID; ?>" class="post-<?php echo $frontPost->ID; ?> columns small-12 text-center" role="article" itemscope itemtype="http://schema.org/WebPage">
 								
 			<header class="article-header">
-				<h1 class="page-title"><?php echo $frontPost->post_title; ?></h1>
+				<h1 class="page-title"><?php echo $frontPost->post_title; ?></h1-->
 			</header> <!-- end article header -->
 							
 		    <section class="entry-content" itemprop="articleBody">
