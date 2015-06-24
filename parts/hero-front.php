@@ -1,6 +1,6 @@
 <section class="homepage-hero hero">
 
-<?php if (get_post_status(39)) { $frontPost = get_post(39); ?>
+<?php if (get_post_status(15)) { $frontPost = get_post(15); ?>
 	
 	<div class="hero-content-wrap row">
 
